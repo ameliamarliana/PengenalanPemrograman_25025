@@ -49,9 +49,6 @@ if (total >= 100000) {
 } else {
     cout << "Anda tidak mendapatkan diskon\n";
 }
-return 0;
-}
-
 
 
 
