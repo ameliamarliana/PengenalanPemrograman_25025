@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{	int JmlBarang;
+
+    cout << "Masukkan Stok Barang: ";
+    cin >> JmlBarang;
+    string data[JmlBarang][3];
+
+	for (int i = 0; i < JmlBarang; ++i) {
+	    cout << "\nBarang ke- " << i + 1 << endl;
+	    cout << "Nama Barang: ";
+	    cin >> data[i][0];
+	    
+	    cout << "Stok Barang: ";
+	    cin >> data[i][1];
+	    
+	    cout << "Harga Barang: ";
+	    cin >> data[i][2];
+	    }
+	    
+	cout << "\n-----Waroeng Abah-----\n";
+	cout << "\nNama Barang \tStok \tHarga\n";
+	cout << "-------------------------------";
+	
+	for (int i = 0; i < JmlBarang; i++) {
+	    cout << "\n" << data [i][0] << "\t\t";
+	    cout << data[i][1] << "\t";
+	    cout << data[i][2] << "\t";
+	}
+
+
+	return 0;
+}
