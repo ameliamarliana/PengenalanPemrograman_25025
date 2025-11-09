@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+void hitungSegiEmpat() {
+    float sisi;
+    cout << "\n===Menghitung Luas Segi Empat===\n";
+    cout << "Masukkan panjang sisi: ";
+    cin >> sisi;
+
+    double luas = sisi * sisi;
+    cout << "Luas Persegi Empat adalah " << luas << " cm" << endl;
+}
+
+void hitungSegitiga() {
+    float alas, tinggi;
+    cout << "\n===Menghitung Luas Segitiga===\n";
+    cout << "Masukkan alas: ";
+    cin >> alas;
+    cout << "Masukkan tinggi: ";
+    cin >> tinggi;
+
+    float luas = 0.5 * alas * tinggi;
+    cout << "Luas segitiga = " << luas << " cm" << endl;
+}
+
+void hitungLingkaran() {
+    float r;
+    const float phi = 3.14;
+    cout << "\n=== Menghitung Luas Lingkaran ===\n";
+    cout << "Masukkan jari-jari: ";
+    cin >> r;
+
+    float luas = phi * r * r;
+    cout << "Luas lingkaran = " << luas << " cm" << endl;
+}
+
+int main() {
+    int pilihan;
+
+    cout << "=== PROGRAM MENGHITUNG LUAS ===\n";
+    cout << "1. Segi Empat\n";
+    cout << "2. Segi Tiga\n";
+    cout << "3. Lingkaran\n";
+    cout << "Pilih menu(1-3): ";
+    cin >> pilihan;
+
+    switch (pilihan) {
+        case 1:
+            hitungSegiEmpat();
+            break;
+        case 2:
+            hitungSegitiga();
+            break;
+        case 3:
+            hitungLingkaran();
+            break;
+        default:
+            cout << "Pilihan tidak ada, Coba lagi!\n";
+    }
+
+    return 0;
+}
